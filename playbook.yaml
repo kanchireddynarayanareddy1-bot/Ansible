@@ -1,0 +1,5 @@
+- name: ping the server
+  hosts: frontend #wchih server we want to connect
+  tasks:
+    - name: ping the server
+      ping: ansible.builtin.ping

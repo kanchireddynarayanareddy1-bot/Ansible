@@ -9,7 +9,7 @@
     prompt: what is password?
     private: true
   tasks:
-   - name: print credentials
-     ansible.bultin.debug:
+  - name: print credentials
+    ansible.bultin.debug:
       msg: "The user name {{ username }} and password is {{ password }}"    
    

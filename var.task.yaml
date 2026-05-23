@@ -10,4 +10,4 @@
     vars:
      cousrse: "DevOps With Azure"
     ansible.builtin.debug:
-     msg: "Anme of the course is {{ course }},duration {{ duration }}, and trainer {{ trainer }}"  
+     msg: "Name of the course is {{ course }},duration {{ duration }}, and trainer {{ trainer }}"  

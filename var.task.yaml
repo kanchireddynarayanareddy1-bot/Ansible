@@ -9,5 +9,5 @@
   - name: print the course info
     vars:
      cousrse: "DevOps With Azure"
-    ansible.biultin.debug:
+    ansible.builtin.debug:
      msg: "Anme of the course is {{ course }},duration {{ duration }}, and trainer {{ trainer }}"  

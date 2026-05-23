@@ -3,5 +3,5 @@
   connection: local
   tasks:
   - name: course info
-    ansible.builtin.yaml:
+    ansible.builtin.debug:
      msg: " The name of the course is {{ course}}, duration{{ duration }} and trainer is {{ trainer}}"

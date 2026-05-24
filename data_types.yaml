@@ -1,0 +1,16 @@
+- name: Datatypes
+  hosts: local
+  connection: local
+  vars:
+   course: "DevOps With AWS"
+   duration: 10hrs
+   trainer: "sivakumar reddy"
+   is_live: true
+   tools: ["linux","aws","ansible"]
+   concepts:
+    cloud: "aws"
+    cm: "ansible"
+  tasks:
+   - name: print course full info 
+     ansible.builtin.debug:
+      msg: "The course name {{ course }} , duration of the course is {{ duration }} and the trainer {{ trainer }} & the tools and concets are {{ tools }} {{ concepts }}"

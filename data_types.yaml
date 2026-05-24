@@ -6,7 +6,13 @@
    duration: 10hrs
    trainer: "sivakumar reddy"
    is_live: true
-   tools: ["linux","aws","ansible"]
+  #  tools: ["linux","aws","ansible"]
+   tools:
+   - "linux"
+   - "aws"
+   - "ansible"
+   - "docker and k8s"
+
    concepts:
     cloud: "aws"
     cm: "ansible"

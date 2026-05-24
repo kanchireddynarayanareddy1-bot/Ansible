@@ -11,18 +11,18 @@
 #     - "chinna"
 #     - "Deepak"
 
-- name: install packages
-  hosts: local
-  connection: local
-  become: yes
-  tasks:
-  - name: installing packages
-    ansible.builtin.package:
-      name: "{{ item }}"
-      state: latest
-    loop:
-    - nginx
-    - mysql   
+# - name: install packages
+#   hosts: local
+#   connection: local
+#   become: yes
+#   tasks:
+#   - name: installing packages
+#     ansible.builtin.package:
+#       name: "{{ item }}"
+#       state: latest
+#     loop:
+#     - nginx
+#     - mysql   
 
 - name: install packages 
   hosts: local

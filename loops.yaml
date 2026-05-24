@@ -27,6 +27,7 @@
 - name: install packages 
   hosts: local
   connection: local
+  become: yes
   tasks:
    - name: print installed packages
      ansible.builtin.package:

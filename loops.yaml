@@ -1,12 +1,25 @@
-- name: loops
+# - name: loops
+#   hosts: local
+#   connection: local
+#   tasks:
+#   - name: print the names
+#     ansible.builtin.debug:
+#      msg: "Hello {{ item }}, welcome to DevOps Course"
+#     loop:
+#     - "Ramesh"
+#     - "suresh"
+#     - "chinna"
+#     - "Deepak"
+
+- name: install packages
   hosts: local
   connection: local
+  become: yes
   tasks:
-  - name: print the names
-    ansible.builtin.debug:
-     msg: "Hello {{ item }}, welcome to DevOps Course"
+  - name: installing packages
+    ansible.builtin.package:
+     - name: "{{ item }}"
+       state: latest
     loop:
-    - "Ramesh"
-    - "suresh"
-    - "chinna"
-    - "Deepak" 
+    - nginx
+    - mysql   

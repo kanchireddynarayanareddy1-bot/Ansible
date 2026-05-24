@@ -1,0 +1,13 @@
+- name: functions
+  hosts: local
+  connection: local
+  vars:
+   name: chinna reddy
+   gmail: "Chinna@gmail.com"
+  tasks:
+   - name: print the name in upper case
+     ansible.builtin.debug:
+      msg: "Name of the person{{ name | upper }}"
+   - name: print the gmail in lower
+     ansible.builtin.debug:
+      msg: "gmail is {{ gmail | lower }}"   
